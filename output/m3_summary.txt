@@ -1,0 +1,38 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:       uber_share_logit   R-squared:                       0.684
+Model:                            OLS   Adj. R-squared:                  0.684
+Method:                 Least Squares   F-statistic:                     4068.
+Date:                Fri, 08 May 2026   Prob (F-statistic):               0.00
+Time:                        10:13:15   Log-Likelihood:                 4540.1
+No. Observations:               27567   AIC:                            -9050.
+Df Residuals:                   27552   BIC:                            -8927.
+Df Model:                          14                                         
+Covariance Type:                  HC3                                         
+=====================================================================================================
+                                        coef    std err          z      P>|z|      [0.025      0.975]
+-----------------------------------------------------------------------------------------------------
+Intercept                             0.5851      0.006     93.337      0.000       0.573       0.597
+C(PU_weekday)[T.1]                   -0.1287      0.003    -49.211      0.000      -0.134      -0.124
+C(PU_time_zone)[T.Evening]            0.2225      0.003     76.425      0.000       0.217       0.228
+C(PU_time_zone)[T.Late Night]         0.2983      0.005     62.893      0.000       0.289       0.308
+C(PU_time_zone)[T.Morning]           -0.0132      0.003     -4.886      0.000      -0.019      -0.008
+C(rain_bucket)[T.low_rain]           -0.0327      0.004     -8.399      0.000      -0.040      -0.025
+C(rain_bucket)[T.no_rain]            -0.0319      0.003    -10.128      0.000      -0.038      -0.026
+C(tmin_f_bucket)[T.low_temp]          0.0963      0.004     26.433      0.000       0.089       0.103
+C(tmin_f_bucket)[T.mid_high_temp]    -0.0017      0.003     -0.483      0.629      -0.009       0.005
+C(tmin_f_bucket)[T.mid_low_temp]      0.0186      0.004      5.201      0.000       0.012       0.026
+C(PU_Borough)[T.Brooklyn]            -0.2525      0.005    -49.259      0.000      -0.262      -0.242
+C(PU_Borough)[T.Manhattan]           -0.6396      0.006   -103.257      0.000      -0.652      -0.627
+C(PU_Borough)[T.Queens]              -0.2198      0.005    -43.219      0.000      -0.230      -0.210
+log_rel_lyft_wait_time                0.1805      0.013     13.414      0.000       0.154       0.207
+log_rel_lyft_fare_per_mile           -0.4933      0.015    -32.700      0.000      -0.523      -0.464
+==============================================================================
+Omnibus:                      985.801   Durbin-Watson:                   0.987
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             2814.841
+Skew:                          -0.086   Prob(JB):                         0.00
+Kurtosis:                       4.556   Cond. No.                         17.7
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC3)
